@@ -19,7 +19,7 @@
           </div>
           <% if user_signed_in? %>
             <div class="nav__right">
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              <%= link_to "ログアウト", destroy_user_session_path, class: :nav__logout, method: :delete %>
               <%= link_to "New Proto", new_prototype_path, class: :nav__btn %>
            </div>
           <% else %>

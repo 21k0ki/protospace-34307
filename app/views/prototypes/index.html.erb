@@ -2,9 +2,9 @@
   <div class="inner">
     <% if user_signed_in? %>
        <div class="greeting">
-         <%# <%= "こんにちは、" %>
        </div> 
-    こんにちは、<%= link_to "#{current_user.name}", "/users/#{current_user.id}", class: :greeting__link %> 
+     <%# こんにちは、 <%= link_to "#{@prototypes.user.name}さん", "/users/#{@prototypes.user_id}", class: :greeting__link %> 
+     こんにちは、 <%= link_to "#{current_user.name}さん", "/users/#{current_user.id}", class: :greeting__link %> 
     <% end %>
     <%# // ログインしているときは上記を表示する %>
     <div class="card__wrapper">
